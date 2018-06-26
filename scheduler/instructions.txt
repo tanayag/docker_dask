@@ -1,0 +1,24 @@
+## starting scheduler
+
+# Run:
+  <bash file2.sh>
+
+# Once in the docker container
+  <git clone https://github.com/tanayag/dockerSchedulerFiles.git>
+
+# Now change directory
+  <cd dockerSchedulerFiles>
+
+              # Open another Terminal
+                <docker ps>
+                this will give you container id
+
+              # once you have container id
+                <sudo docker exec -i -t <container_id> /bin/bash>
+
+              # Now in container execute this command:
+                <dask-scheduler>
+                wait for worker to connect
+
+# Come back to previous Terminal
+  <python script.py>
